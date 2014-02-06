@@ -29,15 +29,9 @@ function AppCtrl ($scope) {
     }
   };
   $scope.sidebarURL = 'partials/airport.html';
-  $scope.form = 'partials/form.html';
   $scope.currentAirport = null;
 
   $scope.setAirport = function (code) {
     $scope.currentAirport = $scope.airports[code];
   };
-
-  $scope.editAirportName = function (code) {
-    $scope.editingAirport = $scope.airports[code];
-  }
-
 }
